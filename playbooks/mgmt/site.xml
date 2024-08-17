@@ -1,0 +1,5 @@
+---
+- name: mgmt-packages
+  hosts: mgmt
+  roles:
+    - role: mgmt

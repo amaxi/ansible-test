@@ -1,0 +1,32 @@
+- name: Install minimal packages
+  ansible.builtin.package:
+    name:
+      - curl
+      - findmnt
+      - grep
+      - awk
+      - blkid
+      - lsblk
+      - open-iscsi
+      - nfs-client
+      - w3m
+      - wget
+      - telnet
+      - timezone 
+      - less 
+      - vim 
+      - iproute2 
+      - iputils 
+      - bind-utils 
+      - wireshark 
+      - tcpdump 
+      - traceroute 
+      - s3cmd 
+      - lynx
+      - git
+    state: latest
+  
+- name: Start service iscsid, if not started
+  ansible.builtin.service:
+    name: iscsid
+    state: started

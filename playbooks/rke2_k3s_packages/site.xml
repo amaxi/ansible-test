@@ -1,0 +1,5 @@
+---
+- name: rke2-k3s-packages
+  hosts: rke2-k3s-servers
+  roles:
+    - role: rke2-k3s-packages
