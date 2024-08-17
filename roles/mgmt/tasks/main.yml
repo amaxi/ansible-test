@@ -9,6 +9,21 @@
       - lsblk
       - open-iscsi
       - nfs-client
+      - w3m
+      - wget
+      - telnet
+      - timezone 
+      - less 
+      - vim 
+      - iproute2 
+      - iputils 
+      - bind-utils 
+      - wireshark 
+      - tcpdump 
+      - traceroute 
+      - s3cmd 
+      - lynx
+      - git
     state: latest
   
 - name: Copy the scripts to usr_local_bin
