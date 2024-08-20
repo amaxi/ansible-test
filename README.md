@@ -8,6 +8,11 @@ Tested with:
 - with Leap 15.6
 - Latest stable rke2 and k3s version
 
+Home Lab
+- 2 rke2 servers (rancher)
+- 2 k3s servers (one is impoert and one is created by rancher)
+- 1 mgmt server (manage and test features)
+
 Inventory
 ansible-inventory -i inventory/inventory.ini -y --list > inventory.yml
 
