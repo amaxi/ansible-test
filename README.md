@@ -8,5 +8,17 @@ Tested with:
 - with Leap 15.6
 - Latest stable rke2 and k3s version
 
+Inventory
+ansible-inventory -i inventory/inventory.ini -y --list > inventory.yml
+
+SSH
+ssh-keygen -t ed25519
+eval `ssh-agent`
+ssh-add
+for managed_node in mgmt rke2-1 rke2-2 k3s-1 k3s-2; do ssh-copy-id root@${managed_node}; done
+
+RUN
+ansible-playbook -i inventory/hosts.ini playbooks/ping/site.xml
+
 NOTE:
 https://www.cyberciti.biz/faq/ansible-zypper-update-all-packages-on-opensuse-suse/

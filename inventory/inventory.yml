@@ -1,0 +1,25 @@
+all:
+  children:
+    all-servers:
+      hosts:
+        k3s-1: {}
+        k3s-2: {}
+        mgmt: {}
+        rke2-1: {}
+        rke2-2: {}
+    mgmt:
+      hosts:
+        mgmt: {}
+    rke2-k3s-servers:
+      hosts:
+        k3s-1: {}
+        k3s-2: {}
+        mgmt: {}
+        rke2-1: {}
+        rke2-2: {}
+    test:
+      hosts:
+        localhost: {}
+    zfs:
+      hosts:
+        mgmt: {}
