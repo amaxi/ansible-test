@@ -1,0 +1,5 @@
+---
+- name: Patch all servers
+  hosts: all-servers
+  roles:
+    - role: patch

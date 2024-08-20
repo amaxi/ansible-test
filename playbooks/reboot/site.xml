@@ -1,0 +1,5 @@
+---
+- name: Reboot all servers
+  hosts: all-servers
+  roles:
+    - role: reboot

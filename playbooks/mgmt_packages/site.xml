@@ -2,4 +2,4 @@
 - name: mgmt-packages
   hosts: mgmt
   roles:
-    - role: mgmt
+    - role: mgmt_packages

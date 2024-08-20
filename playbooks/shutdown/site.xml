@@ -1,0 +1,5 @@
+---
+- name: SHutdown all servers
+  hosts: all-servers
+  roles:
+    - role: shutdown
