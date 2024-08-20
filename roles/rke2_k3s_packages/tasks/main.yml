@@ -2,11 +2,10 @@
   ansible.builtin.package:
     name:
       - curl
-      - findmnt
+      - util-linux-systemd
       - grep
       - awk
-      - blkid
-      - lsblk
+      - util-linux
       - open-iscsi
       - nfs-client
     state: latest

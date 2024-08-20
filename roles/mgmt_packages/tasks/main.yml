@@ -2,11 +2,10 @@
   ansible.builtin.package:
     name:
       - curl
-      - findmnt
+      - util-linux-systemd
       - grep
       - awk
-      - blkid
-      - lsblk
+      - util-linux
       - open-iscsi
       - nfs-client
       - w3m
@@ -21,7 +20,7 @@
       - wireshark 
       - tcpdump 
       - traceroute 
-      - s3cmd 
+#      - s3cmd 
       - lynx
       - git
     state: latest
