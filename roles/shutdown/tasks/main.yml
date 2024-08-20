@@ -1,0 +1,3 @@
+- name: Reboot machine and send a message
+  ansible.builtin.shutdown:
+    msg: "Shuting down the machine in 5 seconds"
