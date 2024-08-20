@@ -4,7 +4,7 @@ Environments
 - openSUSE Leap 15.6
 - LeapMicro 6.0
 
-Tested:
+Tested with:
 - with Leap 15.6
 - Latest stable rke2 and k3s version
 
