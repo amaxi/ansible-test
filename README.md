@@ -24,6 +24,7 @@ for managed_node in mgmt rke2-1 rke2-2 k3s-1 k3s-2; do ssh-copy-id root@${manage
 
 RUN
 ansible-playbook -i inventory/hosts.ini playbooks/ping/site.xml
+ansible-playbook -i inventory/hosts.ini playbooks/shutdown/site.xml
 
 NOTE:
 https://www.cyberciti.biz/faq/ansible-zypper-update-all-packages-on-opensuse-suse/
