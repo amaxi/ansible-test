@@ -1,0 +1,5 @@
+---
+- name: Stop services in all servers
+  hosts: all-servers
+  roles:
+    - role: service
