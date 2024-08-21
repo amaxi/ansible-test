@@ -27,3 +27,4 @@ ansible-playbook -i inventory/hosts.ini playbooks/ping/site.xml
 
 NOTE:
 https://www.cyberciti.biz/faq/ansible-zypper-update-all-packages-on-opensuse-suse/
+https://stackoverflow.com/questions/61550860/ansible-stop-and-disable-services-if-they-are-present
